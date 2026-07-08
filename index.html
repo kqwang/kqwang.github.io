@@ -14,17 +14,17 @@
     gtag('config', 'G-LTSEJNJV2B');
   </script>
 
-  <!-- 【修改点1】在 Title 中加入中文名，这是 SEO 权重最高的地方 -->
-  <title>Kaiqiang Wang | 王凯强</title>
+  <!-- 网页标签标题 -->
+  <title>Kaiqiang Wang | 王凯强 - 西北工业大学</title>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
-  <!-- 【修改点2】在 Description 中加入中文名，谷歌会在搜索结果中展示这段话 -->
-  <meta name="description" content="Homepage of Kaiqiang Wang (王凯强). Kaiqiang Wang is currently a Postdoctoral fellow at HKU / NWPU.">
+  <!-- 网页描述 -->
+  <meta name="description" content="Homepage of Kaiqiang Wang (王凯强). Northwestern Polytechnical University (NWPU).">
   
-  <meta name="keywords" content="Kaiqiang Wang, 王凯强, wang kaiqiang, Kaiqiang, Wang, Deep Learning, 西北工业大学, 香港大学">
+  <meta name="keywords" content="Kaiqiang Wang, 王凯强, wang kaiqiang, Kaiqiang, Wang, Deep Learning, 西北工业大学, NWPU">
   <meta name="author" content="Kaiqiang Wang (王凯强)" />
 
   <link rel="stylesheet" href="w3.css">
@@ -33,24 +33,34 @@
     .w3-sidebar a {font-family: "Roboto", sans-serif}
     body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     
-    /* 居中主页链接的样式 */
+    /* 居中排版的样式 */
     .center-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 60vh; /* 占据屏幕高度的60%以居中 */
+      height: 70vh; /* 占据屏幕高度以居中 */
       text-align: center;
     }
     
     .center-container a {
-      text-decoration: none; /* 移除下划线让链接更美观 */
+      text-decoration: none;
       color: #333;
+      transition: color 0.3s ease;
     }
     
     .center-container a:hover {
       color: #000;
       text-decoration: underline;
+    }
+
+    /* 姓名与学校标题的样式 */
+    .main-title {
+      font-size: 28px;
+      font-weight: 500;
+      color: #2c3e50;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
     }
   </style>
 
@@ -62,19 +72,15 @@
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:auto; margin-right:auto;">
 
-  <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:20px"></div>
 
-  <!-- The Biography Section -->
+  <!-- 主体内容区 -->
   <div class="w3-container w3-padding-32" id="biography">
     
-    <!-- 【修改点3】添加搜索引擎爬虫最看重的可见 H1 标签，但可以通过样式将其隐藏（如果不想影响排版），或者直接展示。这里选择直接展示以达到最佳 SEO 效果，并配合页面整体居中。 -->
     <div class="center-container">
       
-      <!-- 隐藏式的 H1，只给搜索引擎看，保持页面只有两个大字链接的极简外观 -->
-      <h1 style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">
-        王凯强 (Kaiqiang Wang) - Deep Learning, HKU, NWPU
-      </h1>
+      <!-- 【新增内容】可见的主标题：姓名-学校 -->
+      <h1 class="main-title">王凯强 - 西北工业大学</h1>
 
       <a href="https://teacher.nwpu.edu.cn/kqwang"><font size="6">中文主页</font></a>
       <br><br>
@@ -84,19 +90,6 @@
   </div>
 
 </div>
-
-<script>
-// Open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
-
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-</script>
 
 </body>
 </html>
