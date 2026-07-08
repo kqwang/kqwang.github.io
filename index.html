@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-
+  <meta name="google-site-verification" content="ZhDEHo-eAwLNrIMSkI8a3otEVbnu9MD0OyRtDiyEkQc" />
+  
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTSEJNJV2B"></script>
   <script>
@@ -14,95 +14,78 @@
     gtag('config', 'G-LTSEJNJV2B');
   </script>
 
-  <title>Kaiqiang</title>
+  <!-- 【修改点1】在 Title 中加入中文名，这是 SEO 权重最高的地方 -->
+  <title>Kaiqiang Wang | 王凯强</title>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Kaiqiang Wang is currently a Postdoctoral fellow at HKU">
-  <meta name="keywords" content="Kaiqiang Wang, 王凯强, wang kaiqiang, Kaiqiang, Wang, Deep Learning">
-  <meta name="author" content="Kaiqiang Wang" />
+  
+  <!-- 【修改点2】在 Description 中加入中文名，谷歌会在搜索结果中展示这段话 -->
+  <meta name="description" content="Homepage of Kaiqiang Wang (王凯强). Kaiqiang Wang is currently a Postdoctoral fellow at HKU / NWPU.">
+  
+  <meta name="keywords" content="Kaiqiang Wang, 王凯强, wang kaiqiang, Kaiqiang, Wang, Deep Learning, 西北工业大学, 香港大学">
+  <meta name="author" content="Kaiqiang Wang (王凯强)" />
 
   <link rel="stylesheet" href="w3.css">
 
   <style>
-  .w3-sidebar a {font-family: "Roboto", sans-serif}
-  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+    .w3-sidebar a {font-family: "Roboto", sans-serif}
+    body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+    
+    /* 居中主页链接的样式 */
+    .center-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 60vh; /* 占据屏幕高度的60%以居中 */
+      text-align: center;
+    }
+    
+    .center-container a {
+      text-decoration: none; /* 移除下划线让链接更美观 */
+      color: #333;
+    }
+    
+    .center-container a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
   </style>
 
   <link rel="icon" type="image/png" href="images/icons.png">
-  <!--
-  <script src="jquery.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-        // Store hash
-        var hash = this.hash;
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });
-  </script>
-  //-->
-
 </head>
-
 
 <body class="w3-content" style="max-width:888px">
 
-
-
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:50px">
+<div class="w3-main" style="margin-left:auto; margin-right:auto;">
 
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:20px"></div>
 
-<!-- The Biography Section -->
-    <div class="w3-container w3-padding-32" id="biography">
-      <h2></h2>
-        <p class="w3-left-align" style="line-height:200%">
-<!--      <img style="width: 80%;max-width: 80px" alt="profile photo" src="images/kaiqiang.png">-->
-<!--      <h1>Kaiqiang Wang</h1>-->
-<!--        <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:800px">-->
-<!--          <a href="https://teacher.nwpu.edu.cn/kqwang"><font size="6">中文主页</font></a>-->
-<!--          <br><br>-->
-<!--          <a href="https://teacher.nwpu.edu.cn/en/kqwang"><font size="6">English Homepage</font></a>-->
-        </p>
+  <!-- The Biography Section -->
+  <div class="w3-container w3-padding-32" id="biography">
+    
+    <!-- 【修改点3】添加搜索引擎爬虫最看重的可见 H1 标签，但可以通过样式将其隐藏（如果不想影响排版），或者直接展示。这里选择直接展示以达到最佳 SEO 效果，并配合页面整体居中。 -->
+    <div class="center-container">
+      
+      <!-- 隐藏式的 H1，只给搜索引擎看，保持页面只有两个大字链接的极简外观 -->
+      <h1 style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">
+        王凯强 (Kaiqiang Wang) - Deep Learning, HKU, NWPU
+      </h1>
 
+      <a href="https://teacher.nwpu.edu.cn/kqwang"><font size="6">中文主页</font></a>
+      <br><br>
+      <a href="https://teacher.nwpu.edu.cn/en/kqwang"><font size="6">English Homepage</font></a>
+    </div>
 
-<!-- End of Statcounter Code -->
+  </div>
 
-<!-- End page content -->
-
+</div>
 
 <script>
-// Accordion
-function myAccFunc() {
-  var x = document.getElementById("demoAcc");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
-
-
 // Open and close sidebar
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
@@ -115,28 +98,5 @@ function w3_close() {
 }
 </script>
 
-</body>
-</html>
-
-
-
-<html>
-<head>
-<style>
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-</style>
-</head>
-<body>
-<div class="container">
-  <a href="https://teacher.nwpu.edu.cn/kqwang"><font size="6">中文主页</font></a>
-  <br><br>
-  <a href="https://teacher.nwpu.edu.cn/en/kqwang"><font size="6">English Homepage</font></a>
-
-</div>
 </body>
 </html>
